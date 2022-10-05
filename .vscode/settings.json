@@ -1,0 +1,24 @@
+{
+    "cSpell.language": "pt,en",
+    "latex-workshop.latex.tools": [{
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-xelatex",
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-emulate-aux-dir",
+            "--aux-directory=.aux",
+            "%DOC%"
+        ]
+    }
+],
+"latex-workshop.view.outline.sections": [
+    "part",
+    "chapter",
+    "section|cvsection",
+    "subsection",
+    "subsubsection"
+]
+}

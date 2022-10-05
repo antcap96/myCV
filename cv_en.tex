@@ -1,0 +1,178 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{publications.bib}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Last update time
+\lastupdated
+
+% Title name
+\namesection{António}{Capela}{
+\phone{+351969874351} \email{\href{mailto:acapela96@hotmail.com}{acapela96@hotmail.com}}}
+
+% Cute face
+\begin{tikzpicture}[remember picture,overlay]
+    \node at ($(current page.north west)+(3cm,-1.6cm)$)[
+    circle,
+    minimum size=2.5cm,
+    path picture={
+        \node at (path picture bounding box.center){
+            \includegraphics[width=2.5cm]{eu_tipo_passe.jpg}
+        };
+    }]{};
+\end{tikzpicture}
+
+% Column one
+\begin{minipage}[t]{0.35\textwidth} 
+
+% Links
+\cvsection{Links}
+
+\github{GitHub} \href{https://github.com/antcap96}{\bf antcap96} \\
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/appcapela/}{\bf appcapela}
+\sectionsep
+
+% Coursework
+\cvsection{Coursework}
+
+\subsection{Graduate}
+Advanced Algorithms \\
+Computability and Complexity \\
+Artificial Intelligence \\
+Machine Learning \\
+Reinforcement Learning \\
+Time Series Analysis \\
+Probability Theory \\
+Statistical Learning \\
+\textbf{Dissertation: }
+An Adaptive and Transferable Dialog Management System for Social Aware Task Execution \cite{capela2019adaptive}
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+
+\subsection{Programming}
+Python \textbullet{}
+Julia \textbullet{}
+C \textbullet{}
+C++ \textbullet{}
+SQL \textbullet{}
+Scala
+\sectionsep
+\subsection{Miscellaneous}
+Shell \textbullet{}
+LaTeX \textbullet{}
+Git \textbullet{}
+Microsoft Office \textbullet{}
+Confluence
+
+% Languages
+\cvsection{Languages} 
+
+\subsection{English}
+\descript{C1}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Certificate obtained by achieving grade A on the FCE exam in 2013.
+\sectionsep
+
+\subsection{Portuguese}
+\descript{Mother Tongue}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+% Certificates
+\cvsection{Certificates}
+
+\runsubsection{Microsoft -- Azure} \\
+\descript{Azure Data Scientist Associate}
+\descript{Azure AI Engineer Associate}
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.64\textwidth} 
+
+% Education
+\cvsection{Education} 
+
+\subsection{Instituto Superior Técnico}
+\descript{Bachelor's degree in Engineering Physics}
+\cvevent{Sep 2017}{Lisbon}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+\subsection{Instituto Superior Técnico}
+\descript{Master's degree in Mathematics and Applications}
+\cvevent{Sep 2020}{Lisbon}
+\sectionsep
+
+% Experience
+\cvsection{Experience}
+
+\runsubsection{Machine Learning Intern} \\
+\descript{LIP Summer Internship}
+\cvevent{July 2017 -- August 2017}{Lisbon, Portugal} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Data analysis on simulated data of di-Higgs production from CERN's ATLAS experiment.
+    \item Application of Machine Learning techniques like Neural Networks and Boosted Decision Trees to discriminate \textit{background} collisions from di-Higgs generating collisions.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Data Scientist} \\
+\descript{Data Scientist Consultant at Xpand-IT}
+\cvevent{Oct 2020 -- current}{remote work, Portugal} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Developed a kafka stream for a major european agency to perform real time inference using a model trained using pyspark in azure databricks that was serialized with MLeap. A kibana dashboard was setup to monitor the model performance over time.
+    \item Worked with the Data Science team at a portuguese major bank. The work consisted of data analysis and transformation using pyspark to create kedro pipelines automated with airflow and the creation of Machine Learning models.
+    \item Worked with an Irish Startup to develop an image classification model automated using azure Data Factory
+\end{tightemize}
+\sectionsep
+
+% Personal Projects
+\cvsection{Personal Projects} 
+
+\runsubsection{Sqlinpython} \\
+\descript{SQL library in python}
+ Inspired by python code that created strings containing SQL queries and with the goal of improving my knowledge in: SQL, creating a python library and static typing in python with mypy, I ended up developing from the ground up a toy library to mimic SQL syntax but using python objects with static checks that ensure the SQL syntax is valid.
+\sectionsep
+
+\end{minipage} 
+
+\printbibliography
+\end{document}  
