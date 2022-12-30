@@ -20,5 +20,11 @@
     "section|cvsection",
     "subsection",
     "subsubsection"
+],
+"cSpell.words": [
+    "convolutional",
+    "Databricks",
+    "Higgs",
+    "pyspark"
 ]
 }

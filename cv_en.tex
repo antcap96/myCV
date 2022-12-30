@@ -57,7 +57,7 @@
 \end{tikzpicture}
 
 % Column one
-\begin{minipage}[t]{0.35\textwidth} 
+\begin{minipage}[t]{0.33\textwidth} 
 
 % Links
 \cvsection{Links}
@@ -124,7 +124,7 @@ Certificate obtained by achieving grade A on the FCE exam in 2013.
 % Column two
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.64\textwidth} 
+\begin{minipage}[t]{0.66\textwidth} 
 
 % Education
 \cvsection{Education} 
@@ -149,7 +149,7 @@ Certificate obtained by achieving grade A on the FCE exam in 2013.
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
     \item Data analysis on simulated data of di-Higgs production from CERN's ATLAS experiment.
-    \item Application of Machine Learning techniques like Neural Networks and Boosted Decision Trees to discriminate \textit{background} collisions from di-Higgs generating collisions.
+    \item Development of a Machine Learning model with Neural Networks and Boosted Decision Trees to identify collisions that generate di-Higgs particles.
 \end{tightemize}
 \sectionsep
 
@@ -158,18 +158,19 @@ Certificate obtained by achieving grade A on the FCE exam in 2013.
 \cvevent{Oct 2020 -- current}{remote work, Portugal} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-    \item Developed a kafka stream for a major european agency to perform real time inference using a model trained using pyspark in azure databricks that was serialized with MLeap. A kibana dashboard was setup to monitor the model performance over time.
-    \item Worked with the Data Science team at a portuguese major bank. The work consisted of data analysis and transformation using pyspark to create kedro pipelines automated with airflow and the creation of Machine Learning models.
-    \item Worked with an Irish Startup to develop an image classification model automated using azure Data Factory
+    \item Worked with the Data Science team at major portuguese bank for over 1 year. Some of the things I worked on there were: creating ETL pipelines using pyspark that were orchestrated with \href{https://kedro.readthedocs.io/en/stable/index.html}{Kedro} and \href{https://airflow.apache.org}{Apache Airflow}; Development of Machine Learning models to be used by other teams at the bank.
+    \item Developed a classification model in Azure Databricks for a major european agency. The model created was a gradient boosting tree (\href{https://lightgbm.readthedocs.io/en/latest/}{LightGBM}) and was implemented as a real time inference model in a Kafka stream.
+    \item Worked for an Irish Startup, were we developed an image classification model. The model consisted of a Convolutional Neural Network, implemented with \href{https://keras.io/}{Keras} making use of transfer learning from the VGG16 model.
+    \item Performed sentiment analysis using Azure Cognitive Services and keyword extraction with \href{http://yake.inesctec.pt/}{YAKE} to identify causes of complaint in messages.
 \end{tightemize}
 \sectionsep
 
 % Personal Projects
 \cvsection{Personal Projects} 
 
-\runsubsection{Sqlinpython} \\
+\runsubsection{\href{https://github.com/antcap96/sqlinpython}{Sqlinpython}} \\
 \descript{SQL library in python}
- Inspired by python code that created strings containing SQL queries and with the goal of improving my knowledge in: SQL, creating a python library and static typing in python with mypy, I ended up developing from the ground up a toy library to mimic SQL syntax but using python objects with static checks that ensure the SQL syntax is valid.
+ Inspired by python code containing strings with SQL queries and with the goal of improving my knowledge in: creating a python library, static typing using mypy as well as SQL, I ended up developing a toy library to mimic SQL syntax but using python objects with static checks that ensure the SQL syntax is valid.
 \sectionsep
 
 \end{minipage} 
