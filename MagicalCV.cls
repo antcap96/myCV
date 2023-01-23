@@ -23,10 +23,10 @@
 % \usepackage{cite}
 % Add boxes
 \usepackage[absolute]{textpos}
-% Set isodate
-\usepackage[UKenglish]{isodate}
 % Title styles
 \usepackage{titlesec}
+% Show only month and year on last updated
+\usepackage{datetime}
 % Make fixed length table
 \RequirePackage{array}
 % Handle list environment
@@ -305,8 +305,9 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
+\newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
+Last Updated on \monthyeardate\today
 \end{textblock}}
 
 % Name command
