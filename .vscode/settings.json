@@ -9,7 +9,6 @@
             "-interaction=nonstopmode",
             "-file-line-error",
             "-emulate-aux-dir",
-            "--aux-directory=.aux",
             "%DOC%"
         ]
     }

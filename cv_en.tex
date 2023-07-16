@@ -88,9 +88,10 @@ An Adaptive and Transferable Dialog Management System for Social Aware Task Exec
 \subsection{Programming}
 Python \textbullet{}
 Julia \textbullet{}
+SQL \textbullet{}
+Rust \textbullet{}
 C \textbullet{}
 C++ \textbullet{}
-SQL \textbullet{}
 Scala
 \sectionsep
 \subsection{Miscellaneous}
@@ -121,24 +122,24 @@ Certificate obtained by achieving grade A on the FCE exam in 2013.
 \descript{Azure Data Scientist Associate}
 \descript{Azure AI Engineer Associate}
 
-% Column two
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.66\textwidth} 
-
 % Education
 \cvsection{Education} 
 
-\subsection{Instituto Superior Técnico}
+\subsection{IST}
 \descript{Bachelor's degree in Engineering Physics}
 \cvevent{Sep 2017}{Lisbon}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \sectionsep
 
-\subsection{Instituto Superior Técnico}
+\subsection{IST}
 \descript{Master's degree in Mathematics and Applications}
 \cvevent{Sep 2020}{Lisbon}
 \sectionsep
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
 
 % Experience
 \cvsection{Experience}
@@ -158,22 +159,29 @@ Certificate obtained by achieving grade A on the FCE exam in 2013.
 \cvevent{Oct 2020 -- current}{remote work, Portugal} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-    \item Worked with the Data Science team at major portuguese bank for over 1 year. Some of the things I worked on there were: creating ETL pipelines using pyspark that were orchestrated with \href{https://kedro.readthedocs.io/en/stable/index.html}{Kedro} and \href{https://airflow.apache.org}{Apache Airflow}; Development of Machine Learning models to be used by other teams at the bank.
-    \item Developed a classification model in Azure Databricks for a major european agency. The model created was a gradient boosting tree (\href{https://lightgbm.readthedocs.io/en/latest/}{LightGBM}) and was implemented as a real time inference model in a Kafka stream.
-    \item Worked for an Irish Startup, were we developed an image classification model. The model consisted of a Convolutional Neural Network, implemented with \href{https://keras.io/}{Keras} making use of transfer learning from the VGG16 model.
-    \item Performed sentiment analysis using Azure Cognitive Services and keyword extraction with \href{http://yake.inesctec.pt/}{YAKE} to identify causes of complaint in messages.
+    \item Worked with the Data Science team at major portuguese bank for over 1 year. Some of my key responsibilities included:
+    \begin{tightemize}
+        \item  creating ETL pipelines using pyspark that were orchestrated with \href{https://kedro.readthedocs.io/en/stable/index.html}{Kedro} and \href{https://airflow.apache.org}{Apache Airflow};
+        \item Development of Machine Learning models to be used by other teams at the bank.
+    \end{tightemize}
+    \item Developed a classification model in Azure Databricks for a major european agency. The model, a gradient boosting tree (\href{https://lightgbm.readthedocs.io/en/latest/}{LightGBM}), was implemented as a real-time inference model in a Kafka stream.
+    \item Worked for an Irish Startup, were we developed an image classification model. The model utilized a Convolutional Neural Network implemented with \href{https://keras.io/}{Keras}, leveraging transfer learning from the VGG16 model.
+    \item Performed sentiment analysis using Azure Cognitive Services and keyword extraction with \href{http://yake.inesctec.pt/}{YAKE} to identify reasons for complaints in feedback forms.
+    \item Currently working for a large retail company, working on data handling and forecasting in Azure Databricks. My responsibilities involve working data pipelines for data ingestion and ML model monitoring.
 \end{tightemize}
 \sectionsep
 
 % Personal Projects
 \cvsection{Personal Projects} 
 
-\runsubsection{\href{https://github.com/antcap96/sqlinpython}{Sqlinpython}} \\
-\descript{SQL library in python}
- Inspired by python code containing strings with SQL queries and with the goal of improving my knowledge in: creating a python library, static typing using mypy as well as SQL, I ended up developing a toy library to mimic SQL syntax but using python objects with static checks that ensure the SQL syntax is valid.
+\runsubsection{\href{https://github.com/antcap96/my-monkey-lang}{Writing and interpreter}} \\
+\descript{Learning to code in Rust}
+
+In my personal journey of learning Rust, I chose to follow the book: \href{https://interpreterbook.com/}{Writing An Interpreter In Go}. This book describes the step-by-step process of implementing an interpreter from scratch for a toy language called monkey-lang with code examples written in Go. I took on the challenge of creating my own implementation in Rust.
+
 \sectionsep
 
 \end{minipage} 
 
 \printbibliography
-\end{document}  
+\end{document}

@@ -1,7 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                Declaration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \ProvidesClass{MagicalCV}[2022/05/31 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
@@ -52,8 +51,6 @@
 \RequirePackage[skins]{tcolorbox}
 % Deal a paragraphs
 \RequirePackage{parskip}
-% Web-related icons
-\RequirePackage{fontawesome}
 % Graphic elements in latex
 \RequirePackage{tikz}
 % Adding images and stuff
