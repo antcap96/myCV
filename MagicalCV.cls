@@ -357,3 +357,15 @@ Last Updated on \monthyeardate\today
 \newcommand{\cvevent}[2]{
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#1}%
   \ifstrequal{#2}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#2}}\par}}
+  
+% Boxed tags for highlighting
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body,rounded corners,inner xsep=1ex,inner ysep=0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  \vspace{0.25ex}
+}
+
+\newcommand{\cvtags}[1]{%
+  \foreach \tagValue in {#1} {%
+      \cvtag{\tagValue}
+  }
+}
